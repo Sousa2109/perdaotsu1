@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p class="texto1">Por mais que eu tenha errado, te ofendido, sido um pilantra com você.</p>
+        <img src="felix3.png" alt="Imagem de Felix" class="imagem">
+        <button class="botao" onclick="showMore()">E daí?</button>
+        <div id="moreContent" style="display: none;">
+            <p class="texto1">Mas eu estou disposto a fazer de tudo para te fazer me perdoar, porque reconheço meu erro contigo, Tsu!</p>
+            <img src="felix3.gif" alt="Imagem animada de Felix" class="imagem">
+            <!-- Mostrar o botão "Perdoar?" apenas depois do clique no "E daí?" -->
+            <button class="botao" onclick="window.location.href='pagina5.html'">Perdoar?</button>
+        </div>
+    </div>
+
+    <script>
+        function showMore() {
+            document.getElementById('moreContent').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
